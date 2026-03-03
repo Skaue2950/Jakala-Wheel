@@ -71,7 +71,6 @@ main{display:grid;grid-template-columns:260px 1fr 380px;overflow:hidden;}
 .cf-pre{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--stone);padding:6px 10px;border-right:1px solid var(--line);flex-shrink:0;}
 .cf-i{flex:1;background:none;border:none;outline:none;font-family:'Jost',sans-serif;font-size:12.5px;font-weight:400;color:var(--ink);padding:6px 10px;}
 .cf-i::placeholder{color:rgba(26,23,16,.22);}
-
 .calc-btn{width:100%;padding:10px;background:var(--ink);color:var(--bg);border:none;font-family:'Jost',sans-serif;font-weight:400;font-size:9.5px;letter-spacing:4px;text-transform:uppercase;cursor:pointer;transition:background .2s;margin-top:12px;}
 .calc-btn:hover{background:var(--ink2);}
 
@@ -110,10 +109,8 @@ main{display:grid;grid-template-columns:260px 1fr 380px;overflow:hidden;}
 .rpe-t{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;color:rgba(26,23,16,.14);line-height:1.4;}
 .rpe-h{font-weight:200;font-size:9px;letter-spacing:3.5px;text-transform:uppercase;color:var(--gold);margin-top:12px;display:flex;align-items:center;gap:8px;}
 .rpe-h::before{content:'';width:14px;height:1px;background:var(--gold);}
-
 .rpd{position:absolute;left:24px;right:48px;top:50%;transform:translateY(-50%);opacity:0;transition:opacity .38s,transform .38s;pointer-events:none;transform:translateY(calc(-50% + 12px));}
 .rpd.on{opacity:1;transform:translateY(-50%);pointer-events:all;}
-
 .rpd-cat{font-weight:200;font-size:9px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:10px;margin-bottom:14px;}
 .rpd-cat::before{content:'';width:16px;height:1px;background:var(--gold);}
 .rpd-icon{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;margin-bottom:14px;background:var(--surface);}
@@ -127,7 +124,6 @@ main{display:grid;grid-template-columns:260px 1fr 380px;overflow:hidden;}
 .ai-tag{font-weight:200;font-size:8.5px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;padding-left:8px;display:flex;align-items:center;gap:6px;}
 .ai-tag svg{width:10px;height:10px;stroke:var(--gold);fill:none;stroke-width:2;}
 .ai-text{font-weight:300;font-size:11.5px;line-height:1.75;color:var(--ink2);padding-left:8px;}
-.ai-typing{display:inline-block;}
 .ai-cursor{display:inline-block;width:1px;height:12px;background:var(--gold);margin-left:1px;vertical-align:middle;animation:cur .7s step-end infinite;}
 @keyframes cur{0%,100%{opacity:1;}50%{opacity:0;}}
 
@@ -144,22 +140,16 @@ main{display:grid;grid-template-columns:260px 1fr 380px;overflow:hidden;}
 .rpd-roi{display:inline-flex;align-items:baseline;gap:7px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);margin-bottom:14px;}
 .rpd-roi-n{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--gold);}
 .rpd-roi-l{font-weight:200;font-size:8.5px;letter-spacing:2px;text-transform:uppercase;color:var(--stone);}
-
 .rpd-desc{font-weight:300;font-size:11.5px;line-height:1.78;color:var(--stone);margin-bottom:14px;}
 .rpd-list{list-style:none;margin-bottom:18px;}
 .rpd-list li{font-weight:300;font-size:11px;padding:6px 0;border-bottom:1px solid var(--line2);color:var(--ink2);display:flex;align-items:flex-start;gap:10px;}
 .rpd-list li::before{content:'';width:12px;height:1px;background:var(--gold);flex-shrink:0;margin-top:7px;}
-
 .rpd-cta{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border:1px solid var(--line);background:transparent;color:var(--ink2);font-family:'Jost',sans-serif;font-weight:300;font-size:9.5px;letter-spacing:3.5px;text-transform:uppercase;cursor:pointer;position:relative;overflow:hidden;transition:color .3s;}
 .rpd-cta::after{content:'';position:absolute;inset:0;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.16,1,.3,1);}
 .rpd-cta:hover::after{transform:scaleX(1);}
 .rpd-cta:hover{color:var(--bg);}
 .rpd-cta span,.rpd-cta svg{position:relative;z-index:1;}
 .rpd-cta svg{width:11px;height:11px;stroke:currentColor;fill:none;stroke-width:1.5;}
-
-/* PRIORITY BADGE on wheel */
-.priority-badge{font-family:'Jost',sans-serif;font-size:8px;font-weight:600;fill:var(--green);letter-spacing:1px;text-transform:uppercase;opacity:0;transition:opacity .5s;}
-.priority-badge.show{opacity:1;}
 
 /* FOOTER */
 footer{padding:12px 52px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);}
@@ -169,7 +159,6 @@ footer{padding:12px 52px;display:flex;justify-content:space-between;align-items:
 </head>
 <body>
 <div class="shell">
-
   <header>
     <div class="brand">
       <div class="b-name">JAKALA</div>
@@ -183,11 +172,8 @@ footer{padding:12px 52px;display:flex;justify-content:space-between;align-items:
   </header>
 
   <main>
-
     <!-- LEFT -->
     <div class="lp">
-
-      <!-- COMPANY SEARCH -->
       <div class="search-box">
         <div class="sb-label">Who are you meeting?</div>
         <div class="sb-wrap">
@@ -198,20 +184,18 @@ footer{padding:12px 52px;display:flex;justify-content:space-between;align-items:
         </div>
       </div>
 
-      <!-- COMPANY CARD -->
       <div class="company-card" id="cc">
         <div class="cc-loading" id="cc-loading">
           <svg width="12" height="12" viewBox="0 0 24 24" style="stroke:var(--gold);fill:none;stroke-width:2;stroke-linecap:round;animation:spinico .8s linear infinite"><path d="M21 12a9 9 0 1 1-9-9"/></svg>
-          Researching company<span class="dots"><span>.</span><span>.</span><span>.</span></span>
+          Researching<span class="dots"><span>.</span><span>.</span><span>.</span></span>
         </div>
-        <div id="cc-content" style="display:none;">
+        <div id="cc-content" style="display:none">
           <div class="cc-name" id="cc-name"></div>
           <div class="cc-meta" id="cc-meta"></div>
           <div class="cc-facts" id="cc-facts"></div>
         </div>
       </div>
 
-      <!-- ROI CALC -->
       <div class="calc-section">
         <div class="cs-label">Estimate the impact</div>
         <div class="cf"><div class="cf-l">Annual revenue</div>
@@ -226,11 +210,10 @@ footer{padding:12px 52px;display:flex;justify-content:space-between;align-items:
       <div class="total-bar" id="total-bar">
         <div class="tb-l">Total annual impact</div>
         <div class="tb-v" id="tb-v">—</div>
-        <div class="tb-s" id="tb-s"></div>
+        <div class="tb-s">Combined across all 6 pillars</div>
       </div>
 
       <div class="seg-nav" id="segnav"></div>
-
     </div>
 
     <!-- WHEEL -->
@@ -238,19 +221,15 @@ footer{padding:12px 52px;display:flex;justify-content:space-between;align-items:
       <svg id="wsv" viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <radialGradient id="diskbg" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="#f8f2e4"/>
-            <stop offset="100%" stop-color="#ece6d4"/>
+            <stop offset="0%" stop-color="#f8f2e4"/><stop offset="100%" stop-color="#ece6d4"/>
           </radialGradient>
           <radialGradient id="ctrbg" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="#ffffff"/>
-            <stop offset="100%" stop-color="#f4efe4"/>
+            <stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#f4efe4"/>
           </radialGradient>
           <filter id="ds"><feDropShadow dx="0" dy="2" stdDeviation="10" flood-color="rgba(26,23,16,0.09)"/></filter>
         </defs>
-
         <circle cx="210" cy="210" r="206" fill="url(#diskbg)" filter="url(#ds)"/>
         <circle cx="210" cy="210" r="206" fill="none" stroke="rgba(26,23,16,.06)" stroke-width="1"/>
-
         <g id="rot" style="transform-origin:210px 210px">
           <g id="segs"></g>
           <g id="spokes"></g>
@@ -258,22 +237,14 @@ footer{padding:12px 52px;display:flex;justify-content:space-between;align-items:
           <circle cx="210" cy="210" r="93" fill="#f4efe4" stroke="rgba(26,23,16,0.07)" stroke-width="1"/>
           <circle cx="210" cy="210" r="99" fill="none" stroke="rgba(26,23,16,0.03)" stroke-width="5"/>
         </g>
-
-        <!-- Fixed center -->
         <circle cx="210" cy="210" r="87" fill="url(#ctrbg)" stroke="rgba(154,126,72,0.18)" stroke-width="1"/>
         <circle cx="210" cy="210" r="71" fill="none" stroke="rgba(154,126,72,0.06)" stroke-width="1" stroke-dasharray="2 6"/>
         <text x="210" y="196" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="11" fill="rgba(154,126,72,0.42)" letter-spacing="3">the</text>
         <text x="210" y="220" text-anchor="middle" font-family="'Jost',sans-serif" font-weight="500" font-size="19" fill="#9a7e48" letter-spacing="6">DATA</text>
         <text x="210" y="236" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="11" fill="rgba(154,126,72,0.42)" letter-spacing="3">engine</text>
         <circle cx="210" cy="210" r="2" fill="#9a7e48"/>
-
-        <!-- Company name ring (shown after lookup) -->
-        <text id="company-ring-text" x="210" y="210" text-anchor="middle"
-          font-family="'Cormorant Garamond',serif" font-style="italic"
-          font-size="10" fill="rgba(154,126,72,0.5)" letter-spacing="2"
-          dy="58" opacity="0" style="transition:opacity .6s"></text>
+        <text id="company-ring-text" x="210" y="268" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="10" fill="rgba(154,126,72,0.5)" letter-spacing="2" opacity="0" style="transition:opacity .6s"></text>
       </svg>
-
       <button class="spin-btn" id="spinBtn" onclick="doSpin()">
         <svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74"/><polyline points="21 3 21 9 15 9"/></svg>
         Spin the wheel
@@ -291,8 +262,6 @@ footer{padding:12px 52px;display:flex;justify-content:space-between;align-items:
         <div class="rpd-cat" id="rpd-cat"></div>
         <div class="rpd-icon"><svg id="rpd-icon" viewBox="0 0 24 24"></svg></div>
         <div class="rpd-title" id="rpd-title"></div>
-
-        <!-- AI company insight -->
         <div class="ai-card" id="ai-card">
           <div class="ai-tag">
             <svg viewBox="0 0 24 24"><path d="M12 2l2 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z"/></svg>
@@ -300,8 +269,6 @@ footer{padding:12px 52px;display:flex;justify-content:space-between;align-items:
           </div>
           <div class="ai-text" id="ai-text"></div>
         </div>
-
-        <!-- Impact -->
         <div class="impact-card" id="ic">
           <div class="ic-top">
             <span class="ic-num" id="ic-num"></span>
@@ -310,12 +277,10 @@ footer{padding:12px 52px;display:flex;justify-content:space-between;align-items:
           <div class="ic-lbl" id="ic-lbl"></div>
           <div class="ic-basis" id="ic-basis"></div>
         </div>
-
         <div class="rpd-roi" id="rpd-roi">
           <span class="rpd-roi-n" id="rpd-roi-n"></span>
           <span class="rpd-roi-l" id="rpd-roi-l"></span>
         </div>
-
         <div class="rpd-desc" id="rpd-desc"></div>
         <ul class="rpd-list" id="rpd-list"></ul>
         <button class="rpd-cta">
@@ -324,7 +289,6 @@ footer{padding:12px 52px;display:flex;justify-content:space-between;align-items:
         </button>
       </div>
     </div>
-
   </main>
 
   <footer>
@@ -334,12 +298,14 @@ footer{padding:12px 52px;display:flex;justify-content:space-between;align-items:
 </div>
 
 <script>
-/* ══════════════════════
-   SEGMENT DATA
-══════════════════════ */
+/* ── API ENDPOINT: uses /api/chat on Vercel, direct URL inside Claude ── */
+const API_URL = window.location.hostname.includes('anthropic') || window.location.hostname.includes('claude')
+  ? 'https://api.anthropic.com/v1/messages'
+  : '/api/chat';
+
+/* ── SEGMENTS ── */
 const SEGS = [
-  {
-    label:"DATA\nFOUNDATION", cat:"Infrastructure",
+  { label:"DATA\nFOUNDATION", cat:"Infrastructure",
     icon:`<rect x="2.5" y="2.5" width="7" height="7" rx="1"/><rect x="14.5" y="2.5" width="7" height="7" rx="1"/><rect x="2.5" y="14.5" width="7" height="7" rx="1"/><line x1="15" y1="18" x2="21" y2="18"/><line x1="18" y1="15" x2="18" y2="21"/>`,
     roi:"3.8×", roiLabel:"faster time to insight",
     title:"Data Foundation",
@@ -347,17 +313,15 @@ const SEGS = [
     outcomes:["Unified data lake & warehouse","Real-time pipelines & ingestion","Data governance & lineage","Cloud migration & modernisation"],
     calc:(d)=>{const v=d.rev*.018;return{value:v,label:"from faster, better decisions",basis:`1.8% revenue uplift from improved data quality (Gartner) on ${fmt(d.rev)} revenue`};}
   },
-  {
-    label:"CUSTOMER\nINTELLIGENCE", cat:"Analytics",
+  { label:"CUSTOMER\nINTELLIGENCE", cat:"Analytics",
     icon:`<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>`,
     roi:"+41%", roiLabel:"customer LTV",
     title:"Customer Intelligence",
     desc:"Know every customer at granular depth. We turn your data into a precision instrument for growth, retention and personalisation at scale.",
     outcomes:["360° customer data platform","Predictive segmentation & scoring","Churn prevention modelling","Real-time personalisation"],
-    calc:(d)=>{const churnLoss=d.rev*(d.churn/100);const v=churnLoss*.28;return{value:v,label:"revenue saved from churn reduction",basis:`Reducing your ${d.churn}% churn by 28% recovers ${fmt(v)} of the ${fmt(churnLoss)} lost annually`};}
+    calc:(d)=>{const cl=d.rev*(d.churn/100);const v=cl*.28;return{value:v,label:"revenue saved from churn reduction",basis:`Reducing your ${d.churn}% churn by 28% recovers ${fmt(v)} of the ${fmt(cl)} lost annually`};}
   },
-  {
-    label:"AI &\nAUTOMATION", cat:"Innovation",
+  { label:"AI &\nAUTOMATION", cat:"Innovation",
     icon:`<rect x="3" y="11" width="18" height="10" rx="2"/><path d="M9 11V7a3 3 0 0 1 6 0v4"/><line x1="12" y1="15" x2="12" y2="17"/>`,
     roi:"−45%", roiLabel:"manual effort",
     title:"AI & Automation",
@@ -365,8 +329,7 @@ const SEGS = [
     outcomes:["Generative AI deployment","Process automation","ML decisioning engines","AI governance frameworks"],
     calc:(d)=>{const v=d.rev*.25*.12;return{value:v,label:"annual cost savings from automation",basis:`Automating 12% of manual work (est. labour base ${fmt(d.rev*.25)})`};}
   },
-  {
-    label:"PERFORMANCE\nMARKETING", cat:"Growth",
+  { label:"PERFORMANCE\nMARKETING", cat:"Growth",
     icon:`<polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>`,
     roi:"2.4×", roiLabel:"media efficiency",
     title:"Performance Marketing",
@@ -374,8 +337,7 @@ const SEGS = [
     outcomes:["Marketing mix modelling","Attribution & incrementality","Audience activation","Budget optimisation"],
     calc:(d)=>{const v=d.mkt*.35;return{value:v,label:"recovered from your marketing budget",basis:`35% efficiency gain on your ${fmt(d.mkt)} marketing investment`};}
   },
-  {
-    label:"INSIGHT &\nSTRATEGY", cat:"Consulting",
+  { label:"INSIGHT &\nSTRATEGY", cat:"Consulting",
     icon:`<line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/>`,
     roi:"6 mo", roiLabel:"to first results",
     title:"Insight & Strategy",
@@ -383,23 +345,21 @@ const SEGS = [
     outcomes:["Executive strategy workshops","Competitive landscape modelling","KPI & OKR frameworks","Transformation roadmaps"],
     calc:(d)=>{const v=d.rev*.02;return{value:v,label:"from strategic data alignment",basis:`Mature data strategy outperforms peers by ~2% revenue growth (McKinsey 2024) — ${fmt(v)} on your base`};}
   },
-  {
-    label:"CRM &\nLOYALTY", cat:"Retention",
+  { label:"CRM &\nLOYALTY", cat:"Retention",
     icon:`<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>`,
     roi:"−28%", roiLabel:"churn rate",
     title:"CRM & Loyalty",
-    desc:"Relationships engineered to last. We design CRM programmes that keep your most valuable customers engaged, spending more, and advocating for your brand.",
+    desc:"Relationships engineered to last. We design CRM programmes that keep your most valuable customers engaged, spending more and advocating for your brand.",
     outcomes:["CRM programme design","Loyalty architecture","Lifecycle communications","Customer value measurement"],
     calc:(d)=>{const v=d.rev*(1-d.churn/100)*.05;return{value:v,label:"from increased customer lifetime value",basis:`5% spend uplift from retained customers on ${fmt(d.rev*(1-d.churn/100))} retained revenue`};}
   }
 ];
 
-/* ══════════════════════
-   HELPERS
-══════════════════════ */
+/* ── HELPERS ── */
 function fmt(n){if(n>=1e9)return'€'+(n/1e9).toFixed(1)+'B';if(n>=1e6)return'€'+(n/1e6).toFixed(1)+'M';if(n>=1e3)return'€'+(n/1e3).toFixed(0)+'K';return'€'+Math.round(n).toLocaleString();}
-function parseNum(s){return parseFloat(s.replace(/[^0-9.]/g,''))||0;}
+function parseNum(s){return parseFloat(String(s).replace(/[^0-9.]/g,''))||0;}
 function animNum(el,target){const dur=850,t0=performance.now();(function f(now){const p=Math.min((now-t0)/dur,1),e=1-Math.pow(1-p,3);el.textContent=fmt(Math.round(target*e));if(p<1)requestAnimationFrame(f);})(t0);}
+function typeWrite(el,text,speed=18){el.innerHTML='';const cur=document.createElement('span');cur.className='ai-cursor';el.appendChild(cur);let i=0;const iv=setInterval(()=>{if(i<text.length){cur.insertAdjacentText('beforebegin',text[i]);i++;}else{clearInterval(iv);cur.remove();}},speed);}
 
 /* Format inputs */
 ['inp-rev','inp-mkt'].forEach(id=>{
@@ -410,175 +370,114 @@ function animNum(el,target){const dur=850,t0=performance.now();(function f(now){
 });
 document.getElementById('company-inp').addEventListener('keydown',e=>{if(e.key==='Enter')lookupCompany();});
 
-/* ══════════════════════
-   COMPANY LOOKUP + AI
-══════════════════════ */
-let companyInfo = null;
-let aiInsights = {};
+/* ── COMPANY LOOKUP ── */
+let companyInfo=null, aiInsights={};
 
-async function lookupCompany() {
-  const name = document.getElementById('company-inp').value.trim();
-  if(!name) return;
+async function callAPI(body) {
+  const headers = { 'Content-Type': 'application/json' };
+  // Direct call (inside Claude.ai) needs auth header — Vercel proxy handles it externally
+  if (API_URL.includes('anthropic.com')) {
+    headers['anthropic-version'] = '2023-06-01';
+  }
+  const res = await fetch(API_URL, { method:'POST', headers, body: JSON.stringify(body) });
+  return res.json();
+}
 
-  const cc = document.getElementById('cc');
-  cc.style.display = 'block'; cc.classList.add('show');
-  document.getElementById('cc-loading').style.display = 'flex';
-  document.getElementById('cc-content').style.display = 'none';
+async function lookupCompany(){
+  const name=document.getElementById('company-inp').value.trim();
+  if(!name)return;
+  const cc=document.getElementById('cc');
+  cc.style.display='block';cc.classList.add('show');
+  document.getElementById('cc-loading').style.display='flex';
+  document.getElementById('cc-content').style.display='none';
 
-  try {
-    // Step 1: Search for company info
-    const searchRes = await fetch("https://api.anthropic.com/v1/messages", {
-      method:"POST",
-      headers:{"Content-Type":"application/json"},
-      body:JSON.stringify({
-        model:"claude-sonnet-4-20250514",
-        max_tokens:1000,
-        tools:[{type:"web_search_20250305",name:"web_search"}],
-        messages:[{
-          role:"user",
-          content:`Search for publicly available information about the company "${name}". Find: their industry, approximate annual revenue, number of employees, main business model, known digital/data maturity, any recent news about digital transformation or data initiatives. Return ONLY a JSON object with keys: name, industry, revenue_estimate, employees, business_model, data_maturity (low/medium/high), recent_news (one sentence), hq_location. No markdown, no explanation.`
-        }]
-      })
+  try{
+    const data = await callAPI({
+      model:"claude-sonnet-4-20250514",
+      max_tokens:1000,
+      tools:[{type:"web_search_20250305",name:"web_search"}],
+      messages:[{role:"user",content:`Search for publicly available information about the company "${name}". Find: industry, approximate annual revenue, employees, main business model, digital/data maturity, any recent news on digital transformation. Return ONLY a JSON object with keys: name, industry, revenue_estimate, employees, business_model, data_maturity (low/medium/high), recent_news (one sentence), hq_location. No markdown.`}]
     });
 
-    const searchData = await searchRes.json();
-    const fullText = searchData.content.map(b=>b.text||'').join(' ');
+    const txt=data.content.map(b=>b.text||'').join(' ');
+    const m=txt.replace(/```json|```/g,'').match(/\{[\s\S]*\}/);
+    let info={};
+    if(m){try{info=JSON.parse(m[0]);}catch(e){info={name};}}
+    companyInfo=info;
 
-    let cleaned = fullText.replace(/```json|```/g,'').trim();
-    const jsonMatch = cleaned.match(/\{[\s\S]*\}/);
-    let info = {};
-    if(jsonMatch) {
-      try { info = JSON.parse(jsonMatch[0]); } catch(e) { info = {name, industry:'Unknown', revenue_estimate:'N/A', employees:'N/A', business_model:'N/A', data_maturity:'medium', recent_news:'', hq_location:''}; }
-    }
+    document.getElementById('cc-loading').style.display='none';
+    document.getElementById('cc-content').style.display='block';
+    document.getElementById('cc-name').textContent=info.name||name;
+    document.getElementById('cc-meta').textContent=[info.industry,info.hq_location,info.employees?info.employees+' employees':''].filter(Boolean).join(' · ');
+    const facts=[];
+    if(info.revenue_estimate&&info.revenue_estimate!=='N/A')facts.push('Revenue: '+info.revenue_estimate);
+    if(info.business_model&&info.business_model!=='N/A')facts.push(info.business_model);
+    if(info.recent_news)facts.push(info.recent_news);
+    if(info.data_maturity)facts.push('Data maturity: '+info.data_maturity);
+    document.getElementById('cc-facts').innerHTML=facts.map(f=>`<div class="cc-fact">${f}</div>`).join('');
 
-    companyInfo = info;
+    const rt=document.getElementById('company-ring-text');
+    rt.textContent=info.name||name;rt.setAttribute('opacity','1');
 
-    // Show company card
-    document.getElementById('cc-loading').style.display = 'none';
-    document.getElementById('cc-content').style.display = 'block';
-    document.getElementById('cc-name').textContent = info.name || name;
-    document.getElementById('cc-meta').textContent =
-      [info.industry, info.hq_location, info.employees ? info.employees+' employees' : ''].filter(Boolean).join(' · ');
-
-    const facts = [];
-    if(info.revenue_estimate && info.revenue_estimate !== 'N/A') facts.push('Revenue: ' + info.revenue_estimate);
-    if(info.business_model && info.business_model !== 'N/A') facts.push(info.business_model);
-    if(info.recent_news) facts.push(info.recent_news);
-    if(info.data_maturity) facts.push('Data maturity: ' + info.data_maturity);
-
-    document.getElementById('cc-facts').innerHTML = facts.map(f=>`<div class="cc-fact">${f}</div>`).join('');
-
-    // Show company name on wheel
-    const ringText = document.getElementById('company-ring-text');
-    ringText.textContent = info.name || name;
-    ringText.setAttribute('opacity','1');
-
-    // Pre-generate AI insights for all segments
-    generateAllInsights(info, name);
-
-  } catch(e) {
-    document.getElementById('cc-loading').style.display = 'none';
-    document.getElementById('cc-content').style.display = 'block';
-    document.getElementById('cc-name').textContent = name;
-    document.getElementById('cc-meta').textContent = 'Click a segment for AI-powered recommendations';
-    document.getElementById('cc-facts').innerHTML = '';
-    companyInfo = { name };
-    generateAllInsights({ name }, name);
+    generateAllInsights(info,name);
+  }catch(e){
+    document.getElementById('cc-loading').style.display='none';
+    document.getElementById('cc-content').style.display='block';
+    document.getElementById('cc-name').textContent=name;
+    document.getElementById('cc-meta').textContent='Click a segment for AI-powered recommendations';
+    document.getElementById('cc-facts').innerHTML='';
+    companyInfo={name};
+    generateAllInsights({name},name);
   }
 }
 
-async function generateAllInsights(info, rawName) {
-  aiInsights = {};
-  // Generate insights for all 6 segments in one API call
-  try {
-    const res = await fetch("https://api.anthropic.com/v1/messages", {
-      method:"POST",
-      headers:{"Content-Type":"application/json"},
-      body:JSON.stringify({
-        model:"claude-sonnet-4-20250514",
-        max_tokens:1000,
-        messages:[{
-          role:"user",
-          content:`You are a senior data strategy consultant at JAKALA about to pitch to ${info.name || rawName} (${info.industry || 'unknown industry'}, ${info.revenue_estimate || 'unknown revenue'}, data maturity: ${info.data_maturity || 'unknown'}).
+async function generateAllInsights(info,rawName){
+  aiInsights={};
+  try{
+    const data = await callAPI({
+      model:"claude-sonnet-4-20250514",
+      max_tokens:1000,
+      messages:[{role:"user",content:`You are a senior data strategy consultant at JAKALA pitching to ${info.name||rawName} (${info.industry||'unknown industry'}, ${info.revenue_estimate||'unknown revenue'}, data maturity: ${info.data_maturity||'unknown'}).
 
-Generate a short, sharp, specific insight for each of these 6 data strategy pillars, tailored to this specific company. Each insight should be 2 sentences max — concrete, referencing the company's actual situation, and showing JAKALA's value.
+Generate a short, sharp, specific insight for each of 6 data strategy pillars, tailored to this company. Max 2 sentences each — concrete, referencing their actual situation, showing JAKALA's value.
 
-Return ONLY a JSON object with these exact keys: data_foundation, customer_intelligence, ai_automation, performance_marketing, insight_strategy, crm_loyalty.
-
-Each value is a string of max 2 sentences. Be specific, not generic. No markdown.`
-        }]
-      })
+Return ONLY a JSON object with keys: data_foundation, customer_intelligence, ai_automation, performance_marketing, insight_strategy, crm_loyalty. No markdown.`}]
     });
-    const data = await res.json();
-    const txt = data.content.map(b=>b.text||'').join('');
-    const m = txt.replace(/```json|```/g,'').match(/\{[\s\S]*\}/);
-    if(m) {
-      try {
-        const parsed = JSON.parse(m[0]);
-        aiInsights = {
-          0: parsed.data_foundation,
-          1: parsed.customer_intelligence,
-          2: parsed.ai_automation,
-          3: parsed.performance_marketing,
-          4: parsed.insight_strategy,
-          5: parsed.crm_loyalty
-        };
-        // If a segment is open, refresh it
-        if(activeIdx !== null) openSeg(activeIdx, true);
-      } catch(e) {}
+    const txt=data.content.map(b=>b.text||'').join('');
+    const m=txt.replace(/```json|```/g,'').match(/\{[\s\S]*\}/);
+    if(m){
+      try{
+        const p=JSON.parse(m[0]);
+        aiInsights={0:p.data_foundation,1:p.customer_intelligence,2:p.ai_automation,3:p.performance_marketing,4:p.insight_strategy,5:p.crm_loyalty};
+        if(activeIdx!==null)openSeg(activeIdx,true);
+      }catch(e){}
     }
-  } catch(e) {}
+  }catch(e){}
 }
 
-/* Typewriter effect */
-function typeWrite(el, text, speed=18) {
-  el.innerHTML = '';
-  const cursor = document.createElement('span');
-  cursor.className = 'ai-cursor';
-  el.appendChild(cursor);
-  let i = 0;
-  const iv = setInterval(()=>{
-    if(i < text.length) {
-      cursor.insertAdjacentText('beforebegin', text[i]);
-      i++;
-    } else {
-      clearInterval(iv);
-      cursor.remove();
-    }
-  }, speed);
-}
-
-/* ══════════════════════
-   CALC STATE
-══════════════════════ */
-let calcData = null, calcResults = null;
+/* ── CALC ── */
+let calcData=null,calcResults=null;
 
 function runCalc(){
-  const rev   = parseNum(document.getElementById('inp-rev').value)   || 50000000;
-  const mkt   = parseNum(document.getElementById('inp-mkt').value)   || 5000000;
-  const churn = parseNum(document.getElementById('inp-churn').value) || 12;
-  calcData = {rev,mkt,churn};
-  calcResults = SEGS.map(s=>s.calc(calcData));
-
-  const total = calcResults.reduce((a,r)=>a+r.value,0);
-  const bar = document.getElementById('total-bar');
-  bar.classList.add('show');
-  animNum(document.getElementById('tb-v'), total);
-  document.getElementById('tb-s').textContent = 'Combined across all 6 pillars';
-
+  const rev=parseNum(document.getElementById('inp-rev').value)||50000000;
+  const mkt=parseNum(document.getElementById('inp-mkt').value)||5000000;
+  const churn=parseNum(document.getElementById('inp-churn').value)||12;
+  calcData={rev,mkt,churn};
+  calcResults=SEGS.map(s=>s.calc(calcData));
+  const total=calcResults.reduce((a,r)=>a+r.value,0);
+  document.getElementById('total-bar').classList.add('show');
+  animNum(document.getElementById('tb-v'),total);
   calcResults.forEach((r,i)=>{
-    const pill=document.querySelector(`.sn:nth-child(${i+1}) .sn-pill`);
-    if(pill){pill.textContent=fmt(r.value);pill.classList.add('show');}
+    const p=document.querySelector(`.sn:nth-child(${i+1}) .sn-pill`);
+    if(p){p.textContent=fmt(r.value);p.classList.add('show');}
   });
-
-  drawImpactOnWheel();
-  if(activeIdx!==null) openSeg(activeIdx,true);
+  drawImpact();
+  if(activeIdx!==null)openSeg(activeIdx,true);
 }
 
-function drawImpactOnWheel(){
-  if(!calcResults) return;
-  const g=document.getElementById('impact-g');
-  g.innerHTML='';
+function drawImpact(){
+  if(!calcResults)return;
+  const g=document.getElementById('impact-g');g.innerHTML='';
   calcResults.forEach((r,i)=>{
     const mid=i*ST+ST/2-Math.PI/2;
     const [lx,ly]=P(OR-30,mid);
@@ -595,9 +494,7 @@ function drawImpactOnWheel(){
   });
 }
 
-/* ══════════════════════
-   BUILD NAV
-══════════════════════ */
+/* ── BUILD NAV ── */
 const navEl=document.getElementById('segnav');
 SEGS.forEach((s,i)=>{
   const el=document.createElement('div');
@@ -607,9 +504,7 @@ SEGS.forEach((s,i)=>{
   navEl.appendChild(el);
 });
 
-/* ══════════════════════
-   BUILD WHEEL
-══════════════════════ */
+/* ── BUILD WHEEL ── */
 const CX=210,CY=210,OR=202,IR=96,N=6,ST=(2*Math.PI)/N;
 const P=(r,a)=>[CX+r*Math.cos(a),CY+r*Math.sin(a)];
 function mkPath(i){
@@ -618,7 +513,6 @@ function mkPath(i){
   const [x3,y3]=P(OR,ea-g),[x4,y4]=P(IR+2,ea-g);
   return `M${x1} ${y1}L${x2} ${y2}A${OR} ${OR} 0 0 1 ${x3} ${y3}L${x4} ${y4}A${IR+2} ${IR+2} 0 0 0 ${x1} ${y1}Z`;
 }
-
 const segG=document.getElementById('segs'),spokeG=document.getElementById('spokes');
 const fills=[],txts=[];
 const FILL='#e8e2d2',HOV='#dcd4c0',ACT='#cfc6ae';
@@ -626,18 +520,15 @@ const FILL='#e8e2d2',HOV='#dcd4c0',ACT='#cfc6ae';
 SEGS.forEach((s,i)=>{
   const mid=i*ST+ST/2-Math.PI/2,lr=(OR+IR)/2+10;
   const [lx,ly]=P(lr,mid);
-
   const p=document.createElementNS('http://www.w3.org/2000/svg','path');
   p.setAttribute('d',mkPath(i));p.setAttribute('fill',FILL);
   p.setAttribute('stroke','rgba(244,239,228,1)');p.setAttribute('stroke-width','2');
   p.style.transition='fill .22s';fills.push(p);
-
   const as=i*ST+ST*.07-Math.PI/2,ae=i*ST+ST*.93-Math.PI/2;
   const [ax1,ay1]=P(OR-1,as),[ax2,ay2]=P(OR-1,ae);
   const arc=document.createElementNS('http://www.w3.org/2000/svg','path');
   arc.setAttribute('d',`M${ax1} ${ay1}A${OR-1} ${OR-1} 0 0 1 ${ax2} ${ay2}`);
   arc.setAttribute('stroke','rgba(154,126,72,0.3)');arc.setAttribute('stroke-width','2');arc.setAttribute('fill','none');
-
   const tg=document.createElementNS('http://www.w3.org/2000/svg','g');
   s.label.split('\n').forEach((ln,li)=>{
     const t=document.createElementNS('http://www.w3.org/2000/svg','text');
@@ -649,14 +540,12 @@ SEGS.forEach((s,i)=>{
     t.setAttribute('letter-spacing','1.5');t.style.transition='fill .22s';t.textContent=ln;tg.appendChild(t);
   });
   txts.push(tg);
-
   const sa2=i*ST-Math.PI/2;
-  const [sx,sy]=P(IR+4,sa2+.008),[ex,ey]=P(OR-4,sa2+.008);
+  const [sx,sy]=P(IR+4,sa2+.009),[ex,ey]=P(OR-4,sa2+.009);
   const sp=document.createElementNS('http://www.w3.org/2000/svg','line');
   sp.setAttribute('x1',sx);sp.setAttribute('y1',sy);sp.setAttribute('x2',ex);sp.setAttribute('y2',ey);
   sp.setAttribute('stroke','rgba(244,239,228,1)');sp.setAttribute('stroke-width','2');
   spokeG.appendChild(sp);
-
   const g=document.createElementNS('http://www.w3.org/2000/svg','g');
   g.style.cursor='pointer';g.dataset.i=i;
   g.appendChild(p);g.appendChild(arc);g.appendChild(tg);
@@ -668,14 +557,11 @@ SEGS.forEach((s,i)=>{
 
 function hov(i,on){if(activeIdx===i)return;fills[i].setAttribute('fill',on?HOV:FILL);txts[i].querySelectorAll('text').forEach(t=>t.setAttribute('fill',on?'rgba(26,23,16,0.88)':'rgba(26,23,16,0.55)'));}
 
-/* ══════════════════════
-   DRAG & SPIN
-══════════════════════ */
+/* ── DRAG ── */
 let rot=0,isDrag=false,ds=0,vel=0,lt=0,raf,activeIdx=null;
 const wsv=document.getElementById('wsv'),rotEl=document.getElementById('rot');
 const ang=e=>{const r=wsv.getBoundingClientRect();return Math.atan2((e.clientY??e.touches[0].clientY)-r.top-r.height/2,(e.clientX??e.touches[0].clientX)-r.left-r.width/2);};
 const applyR=()=>rotEl.style.transform=`rotate(${rot}rad)`;
-
 wsv.addEventListener('mousedown',e=>{if(e.target.closest('[data-i]'))return;isDrag=true;ds=ang(e)-rot;cancelAnimationFrame(raf);e.preventDefault();});
 window.addEventListener('mousemove',e=>{if(!isDrag)return;const now=Date.now(),a=ang(e),nr=a-ds;vel=(nr-rot)/Math.max(1,now-lt)*16;lt=now;rot=nr;applyR();});
 window.addEventListener('mouseup',()=>{if(isDrag){isDrag=false;inertia();}});
@@ -686,22 +572,16 @@ function inertia(){cancelAnimationFrame(raf);(function t(){if(Math.abs(vel)<.000
 wsv.addEventListener('click',e=>{const el=e.target.closest('[data-i]');if(el&&!isDrag)openSeg(+el.dataset.i);});
 function doSpin(){cancelAnimationFrame(raf);const b=document.getElementById('spinBtn');b.classList.add('go');setTimeout(()=>b.classList.remove('go'),600);vel=(Math.random()>.5?1:-1)*(0.13+Math.random()*.08);inertia();}
 
-/* ══════════════════════
-   OPEN SEGMENT
-══════════════════════ */
+/* ── OPEN SEGMENT ── */
 function openSeg(i,force=false){
   if(isDrag&&!force)return;
-  activeIdx=i;
-  const s=SEGS[i];
-
+  activeIdx=i;const s=SEGS[i];
   fills.forEach((f,j)=>f.setAttribute('fill',j===i?ACT:FILL));
   txts.forEach((tg,j)=>tg.querySelectorAll('text').forEach(t=>t.setAttribute('fill',j===i?'rgba(26,23,16,0.92)':'rgba(26,23,16,0.42)')));
   document.querySelectorAll('.sn').forEach((el,j)=>el.classList.toggle('act',j===i));
-
   document.getElementById('rpempty').classList.add('gone');
   const rpd=document.getElementById('rpd');
   rpd.classList.remove('on');
-
   setTimeout(()=>{
     document.getElementById('rpd-cat').textContent=s.cat;
     document.getElementById('rpd-icon').innerHTML=s.icon;
@@ -710,35 +590,29 @@ function openSeg(i,force=false){
     document.getElementById('rpd-roi-l').textContent=s.roiLabel;
     document.getElementById('rpd-desc').textContent=s.desc;
     document.getElementById('rpd-list').innerHTML=s.outcomes.map(o=>`<li>${o}</li>`).join('');
-
-    // AI insight
     const aiCard=document.getElementById('ai-card');
-    const aiText=document.getElementById('ai-text');
     if(aiInsights[i]){
       aiCard.classList.add('show');
       document.getElementById('ai-company-name').textContent=companyInfo?.name||'';
-      typeWrite(aiText, aiInsights[i]);
+      typeWrite(document.getElementById('ai-text'),aiInsights[i]);
     } else if(companyInfo){
       aiCard.classList.add('show');
       document.getElementById('ai-company-name').textContent=companyInfo?.name||'';
-      aiText.innerHTML='<span style="color:var(--stone);font-size:10.5px">Generating insight…</span>';
+      document.getElementById('ai-text').innerHTML='<span style="color:var(--stone);font-size:10.5px">Generating insight…</span>';
     } else {
       aiCard.classList.remove('show');
     }
-
-    // ROI
     const ic=document.getElementById('ic');
-    const genericRoi=document.getElementById('rpd-roi');
     if(calcResults){
-      genericRoi.style.display='none';
+      document.getElementById('rpd-roi').style.display='none';
       ic.classList.add('show');
       animNum(document.getElementById('ic-num'),calcResults[i].value);
       document.getElementById('ic-lbl').textContent=calcResults[i].label;
       document.getElementById('ic-basis').textContent=calcResults[i].basis;
     } else {
-      genericRoi.style.display='';ic.classList.remove('show');
+      document.getElementById('rpd-roi').style.display='';
+      ic.classList.remove('show');
     }
-
     rpd.classList.add('on');
   },55);
 }
